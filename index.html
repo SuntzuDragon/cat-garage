@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <title>Cat Garage Status</title>
+</head>
+
+<body onload="update()">
+  <h1>Is Loki in the garage?</h1>
+  <label class="switch">
+    <input type="checkbox" id="lokiBtn">
+    <div class="slider round"></div>
+  </label>
+  <p1>Last Changed on <span id="lokiDate"></span></p1>
+  <h1>Is Mugatu in the garage?</h1>
+  <label class="switch">
+    <input type="checkbox" id="mugatuBtn">
+    <div class="slider round"></div>
+  </label>
+  <p1>Last Changed on <span id="mugatuDate"></span></p1>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.6.1/firebase-app.js"></script>
+  <script src="/__/firebase/8.6.1/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/8.6.1/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+
+  <script src='functions.js'></script>
+</body>
+
+</html>
